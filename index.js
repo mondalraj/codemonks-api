@@ -1,19 +1,17 @@
 const express = require("express");
 const app = express();
 const hackathonRoute = require('./routes/hackathonRoute');
+const internshipRoute = require('./routes/internshipRoute');
+const contestRoute = require('./routes/contestRoute');
 
 // Getting hackathons
 app.use('/api/hackathon', hackathonRoute);
 
 // Getting internships
-app.get("/api/internship", (req, res) => {
-    res.send();
-})
+app.use("/api/internship", internshipRoute)
 
 // Getting contests
-app.get("/api/contest", (req, res) => {
-    res.send();
-})
+app.use("/api/contest", contestRoute)
 
 
 const port = process.env.PORT || 4000;
