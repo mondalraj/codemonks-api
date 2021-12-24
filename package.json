@@ -1,0 +1,24 @@
+{
+  "name": "codemonks-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mondalraj/codemonks-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mondalraj/codemonks-api/issues"
+  },
+  "homepage": "https://github.com/mondalraj/codemonks-api#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "puppeteer": "^13.0.1"
+  }
+}
